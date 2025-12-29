@@ -32,10 +32,7 @@ switch (nilai) {
     case "C":
         console.log("Cukup");
         break;
-    case "A":
-        console.log("Sangat Baik");
-        break;
-    case "A":
+    case "D":
         console.log("Kurang Baik");
         break;                        
     default:
