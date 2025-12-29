@@ -38,3 +38,10 @@ do {
 } while (input !== password);
 console.log("Password benar, akses diterima");
 
+ // - Operator Ternery
+ // kondisi pertama menggunakan tanda ? lalu nilainya
+ // kondisi kedua menggunakan tanda : lalu nilainya 
+ const age = 19;
+ const status = age > 21 ? "Dewasa" : "Belum Dewasa";
+ console.log(status);
+ 
