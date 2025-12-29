@@ -18,9 +18,23 @@
  }
 
  // - Looping while: 
- // menjalankan perintah selama kondisi terpenuhi
+ // menjalankan kode selama kondisi terpenuhi
  let nilai = 0;
  while (nilai < 5) {
     console.log(nilai);
     nilai++;
  }
+
+ // - Looping do while:
+ // menjalankan kode selama kondisi terpenuhi
+ // prompt-sync = untuk menjalankan input didalam node js melalui terminal VsCode
+const prompt = require("prompt-sync")();
+
+let input;
+let password = "admin123";
+
+do {
+  input = prompt("Masukkan password: ");
+} while (input !== password);
+console.log("Password benar, akses diterima");
+
