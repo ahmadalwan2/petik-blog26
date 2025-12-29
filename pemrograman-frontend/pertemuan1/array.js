@@ -31,7 +31,9 @@
     (item) => item.toLowerCase() == "apel".toLowerCase());
  console.log(foundItems);
 
- console.log(combine.includes("SInga"));
+ console.log(combine.includes("Singa"));
+
+ 
  
  
  
