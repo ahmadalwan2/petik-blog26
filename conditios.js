@@ -5,15 +5,40 @@
 // - Jika nilai > 60 = C
 // - Jika nilai < 60 = D
 
-const nilai = 80;
-if (nilai > 90) {
+const nilai = -1000;
+if (nilai > 90 && nilai <= 100) {
+    grade = "A";
     console.log("A");
 } else if (nilai > 70 && nilai <= 90){
+    grade = "B";
     console.log("B");
 } else if (nilai > 60 && nilai <= 70) {
+    grade = "C";
     console.log("C");
 } else if (nilai < 60 && nilai >= 0) {
+    grade = "D";
     console.log("D");
 } else {
     console.log("Nilai tidak valid");
+}
+
+switch (nilai) {
+    case "A":
+        console.log("Sangat Baik");
+        break;
+    case "B":
+        console.log("Baik");
+        break;
+    case "C":
+        console.log("Cukup");
+        break;
+    case "A":
+        console.log("Sangat Baik");
+        break;
+    case "A":
+        console.log("Kurang Baik");
+        break;                        
+    default:
+        "Grade tidak valid";
+        break;
 }
