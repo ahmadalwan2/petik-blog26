@@ -81,6 +81,26 @@ app.delete("/santri/:id", (req, res) => {
     } 
 });
 
+app.put("/santri/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const { nama, jurusan, nilai } = req.body;
+
+    // cari santri berdasarkan id
+    const dataUpdate = data.find((snt) => snt.id === id);
+
+    if (!dataUpdate) {
+        return res.status(404).json({ message: "Data tidak ditemukan", data: null });
+    }
+
+    // update field yang dikirim
+    if (nama) dataUpdate.nama = nama;
+    if (jurusan) dataUpdate.jurusan = jurusan;
+    if (nilai) dataUpdate.nilai = nilai;
+
+    return res.status(200).json({ message: "Data berhasil diupdate", data });
+});
+
+
 
 app.listen(3000, () => {
     console.log("server berjalan...");
