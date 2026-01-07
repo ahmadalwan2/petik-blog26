@@ -35,7 +35,7 @@ app.get("/santri/:id", (req, res) => {
 });
 
 app.get("/santri", (req, res) => {
-// Bagaimana jikalau nggak ada query nya saya tampilkan semua data 
+// Bagaimana jikalau nggak ada query nya, Maka tampilkan semua data 
 // Jika ada query nya maka saya cek query tsbt
 
     const nama = req.query.nama;
