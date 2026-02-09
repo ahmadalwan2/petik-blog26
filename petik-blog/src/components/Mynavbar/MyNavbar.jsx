@@ -6,9 +6,9 @@ const MyNavbar = () => {
     <div>
       <Navbar className="Nav bg-primary">
         <Container>
-          <Navbar.Brand href="#home">
-            <Link to={"/"}>Petik Blog</Link>
-          </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          Petik Blog
+        </Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link>
               <NavLink to={"/"}>Home</NavLink>
